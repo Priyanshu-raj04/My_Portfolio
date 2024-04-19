@@ -1,0 +1,138 @@
+*{
+    font-family: "ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0px;
+    background-color: hwb(0 3% 97%);
+    color: #ededed;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: transparent;
+}
+.navbar{
+    
+    color: white;
+}
+.logo{
+    font-size: 40px;
+    color: #00abf0;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.navbar > ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    display: flex;
+    justify-content: start; 
+    justify-content: end;
+    align-items: center; 
+    margin-right:100px; 
+}
+
+.navbar > ul > li > a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    margin-left: 35px;
+    display: inline-block;
+    transition: 1s;
+}
+
+.navbar > ul >li > a:hover
+{
+    color: #ace60e;
+}
+
+ .drop,
+ .dropdown{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    display: none;
+}
+
+.drop > li > a,
+.dropdown > li > a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    background-color: blueviolet;
+    width: 100%;
+}
+
+.drop > li > a:hover,
+.dropdown > li > a:hover{
+    background-color: orange;
+} 
+
+.navbar > ul > li:hover .drop,
+.navbar > ul > li:hover .dropdown{
+    display: block;
+}
+.home{
+    /* display: flex;
+     background: url('images.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center; */
+    align-items: center;
+    height: 65vh;
+    padding: 0 10%;
+}
+.home-content {
+    max-width: 600px;
+}
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 5;
+}
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+    margin: -95px 0 -108px;
+}
+.home-content p {
+    font-size: 20px;
+    margin: 150px 0 163px;
+}
+.home-social {
+    background-color: transparent;
+}
+.home-social {
+    position:  absolute;
+    bottom: 80px;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.home-social a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius:  50%;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home-social a:hover{
+    background-color: #00abf0;
+}
+ 
